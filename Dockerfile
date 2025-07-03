@@ -1,9 +1,8 @@
-From golang:1.22-alpine
+From golang:1.24-alpine
 
 WORKDIR /app
 
 COPY go.mod ./
-COPY go.sum ./
 RUN go mod download
 
 COPY . .
